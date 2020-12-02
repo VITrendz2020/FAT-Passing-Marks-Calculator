@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/new.css"/>
+    <title>FAT Calc</title>
+    <link rel="icon" type="image/png" href="https://drive.google.com/thumbnail?id=17v_d_CiEZnmTnKH3jeJu2MtKkeI8KuAf">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="https://www.vitrendz.tech">
+          <img src="https://drive.google.com/thumbnail?id=10bwXdT0UY1ElXcGkHDHiN3jpRSPEnQaQ" class="navLogo" alt="" loading="lazy"/>
+        </a>
+    </nav>
+<div class="container appBody">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="alert alert-warning" role="alert">
+                <span id="pre-text">Welcome to the </span><strong id="result">FAT Passing marks Calculator</strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="jumbotron jumbotron-fluid" id="calculator1">
+                <div class="container">
+                    <div>
+                        <form id="formo">
+                            <h2 class="titleCalc">THEORY ONLY</h2><hr>
+
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">CAT-1 & CAT-2</span>
+                                </div>
+                                <input type="number" aria-label="First name" id="cat1" name="cat1" placeholder="(30 MARKS)" required class="form-control" min=0 max=30>
+                                <input type="number" aria-label="Last name" id="cat2" name="cat2" placeholder="(30 MARKS)" required class="form-control" min=0 max=30>
+                            </div>
+
+                            <div class="input-group mb-3 secondInput">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="basic-addon3">Internal Marks</span>
+                                </div>
+                                <input id="quiz1" class="form-control" type="number" name="quiz1" placeholder="DA (10)" required min=0 max=10>
+                                <input id="da1" class="form-control" type="number" name="da1" placeholder="Quiz/DA (10)" required min=0 max=10>
+                                <input id="da2" class="form-control" type="number" name="da2" placeholder="Quiz/DA  (10)" required min=0 max=10>
+
+                            </div><hr>
+
+                            <div class="btnGroup">
+                                <button class="btn btn-success" id="submit" type="submit">CALCULATE</button>
+                                <button class="btn btn-danger" id="clear">CLEAR</button>
+                            </div>
+
+                        </form>
+                        <p class="vitrends">Created with <i class="fas fa-heart"></i> by VITrendz</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="calculator2" class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <form id="formo1">
+                        <h2 class="titleCalc">LAB ONLY</h2><hr>
+
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Lab Assessments</span>
+                            </div>
+                            <input type="number" id="a1" name="a1" placeholder="(10 MARKS)" required class="form-control" min=0 max=10>
+                            <input type="number" id="a2" name="a2" placeholder="(10 MARKS)" required class="form-control" min=0 max=10>
+                            <input id="a6" class="form-control" type="number" name="a6" placeholder="(10 MARKS)" required min=0 max=10>
+                        </div>
+
+                        <div class="input-group mb-3 secondInput">
+                            <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Lab Assessments</span>
+                            </div>
+                            <input id="a3" class="form-control" type="number" name="a3" placeholder="(10 MARKS)" required min=0 max=10>
+                            <input id="a4" class="form-control" type="number" name="a4" placeholder="(10 MARKS)" required min=0 max=10>
+                            <input id="a5" class="form-control" type="number" name="a5" placeholder="(10 MARKS)" required min=0 max=10>
+                        </div><hr>
+
+                        <div class="btnGroup">
+                            <button class="btn btn-success" id="submit1" type="submit">CALCULATE</button>
+                            <button class="btn btn-danger" id="clear1">CLEAR</button>
+                        </div>
+
+                    </form>
+                    <p class="vitrends">Created with <i class="fas fa-heart"></i> by VITrendz</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-6 col-6">
+                    <button class="btn btn-primary" id="theory">THEORY</button>
+              </div>
+              <div class="col-md-6 col-6">
+                    <button class="btn btn-primary" id="lab">LAB</button>
+              </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="/javascripts/lab.js"></script>
+<script type="text/javascript" src="/javascripts/theory.js"></script>
+<script type="text/javascript" src="/javascripts/lock.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>

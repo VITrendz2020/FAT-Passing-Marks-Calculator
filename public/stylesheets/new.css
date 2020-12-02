@@ -1,0 +1,67 @@
+body{
+  background-image: linear-gradient(to bottom, darkgray, white);
+    font-family: sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+}
+
+.navbar{
+  position: fixed;
+}
+
+.navLogo{
+  object-fit: contain;
+  height: 35px
+}
+
+.appBody{
+  margin-top: 50px;
+}
+
+.jumbotron{
+  background-color: beige !important;
+  box-shadow: 5px 6px 15px rgba(0,0,0,0.3);
+}
+
+#theory, #lab{
+  margin-bottom: 15px;
+  width:100% !important;
+  height: 60px;
+}
+
+.titleCalc{
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: -10px;
+}
+
+.secondInput{
+  margin-top:15px
+}
+
+.btnGroup{
+  text-align: center;
+}
+
+#submit, #clear, #submit1, #clear1{
+  width:180px;
+  margin-top: 20px;
+}
+
+#submit, #submit1{
+  margin-right: 10px;
+}
+
+.jumbotron{
+  padding-bottom: 5px !important;
+}
+
+.vitrends{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.fas{
+  color:rgb(228, 27, 27) !important
+}
